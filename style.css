@@ -1,0 +1,105 @@
+/* Animations */
+@keyframes color-change {
+    from {
+        background-color: rgb(3, 3, 3);
+    }
+
+    to {
+        background-color: rgb(192, 192, 192);
+    }
+}
+
+@keyframes reverse-color-change {
+    from {
+        background-color: rgb(192, 192, 192);
+        color: black;
+    }
+
+    to {
+        background-color: rgb(3, 3, 3);
+        color: white;
+    }
+}
+
+@keyframes expand-letter-spacing {
+    from {
+        letter-spacing: 5px;
+        color: white;
+    }
+
+    to {
+        letter-spacing: 10px;
+        color: black;
+    }
+}
+
+@keyframes shrink-letter-spacing {
+    from {
+        letter-spacing: 10px;
+    }
+
+    to {
+        letter-spacing: 5px;
+    }
+}
+
+/* Classes */
+.item {
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(3, 3, 3);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    animation: reverse-color-change 0.3s ease-in forwards;
+}
+
+.item:hover {
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(17, 17, 17);
+    border-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    animation: color-change 0.3s ease-out forwards;
+}
+
+div.item:hover h1.expand-text {
+    animation: expand-letter-spacing 0.1s ease-out forwards;
+}
+
+div.item h1.expand-text {
+    animation: shrink-letter-spacing 0.1s ease-in forwards;
+}
+
+div h1.expand-text {
+    animation-fill-mode: forwards;
+}
+
+/* Elements */
+body {
+    background-color: rgb(192, 192, 192);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
