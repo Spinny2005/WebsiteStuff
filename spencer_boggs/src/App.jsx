@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style';
 
-import { Button, Footer, Navbar } from './components';
+import { Button, Footer, Navbar, About } from './components';
 
 const App = () => (
   <div class="bg-primary w-full overflow-hidden">
@@ -13,6 +13,7 @@ const App = () => (
 
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
+        <About />
         <Button />
       </div>
     </div>
